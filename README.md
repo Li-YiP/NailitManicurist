@@ -20,4 +20,4 @@
 
 ## Back end
 
-> 使用工具：ASP.NET Core API (5.0)
+> 使用工具：ASP.NET Core Web API (5.0)
