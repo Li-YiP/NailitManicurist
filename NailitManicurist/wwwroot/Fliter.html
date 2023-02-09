@@ -57,13 +57,11 @@
               .RangeContainer {
                   display: flex;
                   flex-direction: column;
-                  /*width: 80%;*/
                   margin: 10% auto;
               }
 
               .SliderControl {
                   position: relative;
-                  /*min-height: 50px;*/
                   height: 20px;
               }
 
@@ -126,10 +124,8 @@
                   position: absolute;
                   color: rgb(180, 180, 180);
                   font-weight: bold;
-                  /*top:4px;*/
                   margin-top: 4px;
                   margin-left: -0.5px;
-                  /*margin-top:-36px;*/
               }
 
               #Ctitle {
@@ -144,13 +140,10 @@
               .Coverdiv {
                   display: flex;
                   flex-wrap: wrap;
-                  /*margin-left: 90px;*/
                   margin-left: 30px;
               }
 
               .Cover {
-                  /*margin-right: 70px;*/
-                  /*margin-right: 25px;*/
                   height: 180px;
                   width: 180px;
                   object-fit: cover;
@@ -200,16 +193,12 @@
               .Clickme {
                   border: hidden;
                   position: absolute;
-                  /*top: -60px;*/
-                  /*margin-left: 70px;*/
-                  /*margin-right: 70px;*/
                   left: 25px;
                   top: 130px;
                   padding-top: 5px;
                   padding-bottom: 5px;
                   padding-left: 50px;
                   padding-right: 50px;
-                  /*width:100px;*/
                   text-align: center;
                   background-color: white;
                   color: black;
@@ -224,7 +213,6 @@
                   }
 
               .Seemore {
-                  /*            margin-left: 30px;*/
                   margin-right: 30px;
                   overflow: hidden;
               }
@@ -250,16 +238,14 @@
                       color: #FF6733;
                       text-decoration: none;
                   }
-              /*當前連結CSS*/
+
               .LinkNow {
                   color: #FF6733;
                   font-weight: bold;
               }
-              /*連結CSS END*/
 
               .ForSingle {
                   padding: 3px;
-                  /*color: rgb(230 51 73);*/
                   color: #FF6733;
                   transition: all .3s linear;
                   cursor: pointer;
@@ -270,7 +256,6 @@
                       content: '';
                       width: 100%;
                       height: 1px;
-                      /*background-color: rgb(230 51 73);*/
                       background-color: #FF6733;
                       position: absolute;
                       bottom: 0px;
@@ -281,7 +266,6 @@
 
               .ForCombo {
                   padding: 3px;
-                  /*color: rgb(71 189 101);*/
                   color: #7F7F7F;
                   transition: all .3s linear;
                   cursor: pointer;
@@ -292,7 +276,6 @@
                       content: '';
                       width: 0%;
                       height: 1px;
-                      /*background-color: rgb(71 189 101);*/
                       background-color: #7F7F7F;
                       position: absolute;
                       bottom: 0px;
@@ -306,7 +289,6 @@
 
               .NowSingle {
                   padding: 3px;
-                  /*color: rgb(230 51 73);*/
                   color: #7F7F7F;
                   transition: all .3s linear;
                   cursor: pointer;
@@ -317,7 +299,6 @@
                       content: '';
                       width: 0%;
                       height: 1px;
-                      /*background-color: rgb(230 51 73);*/
                       background-color: #7F7F7F;
                       position: absolute;
                       bottom: 0px;
@@ -331,7 +312,6 @@
 
               .NowCombo {
                   padding: 3px;
-                  /*color: rgb(71 189 101);*/
                   color: #FF6733;
                   transition: all .3s linear;
                   cursor: pointer;
@@ -342,7 +322,6 @@
                       content: '';
                       width: 100%;
                       height: 1px;
-                      /*background-color: rgb(71 189 101);*/
                       background-color: #FF6733;
                       position: absolute;
                       bottom: 0px;
@@ -352,7 +331,6 @@
 
               .ForClear {
                   padding: 3px;
-                  /*color: rgb(105 121 204);*/
                   color: #000000;
                   cursor: pointer;
               }
@@ -387,190 +365,6 @@
                       outline: none;
                   }
 
-              /*DD*/
-              * {
-                  margin: 0;
-                  padding: 0;
-              }
-
-              html {
-                  overflow-y: auto;
-                  overflow-x: hidden;
-              }
-
-              #mynav {
-                  width: 100%;
-                  height: 90px;
-                  position: fixed;
-                  background-position-x: 0px;
-                  font-size: 16px;
-                  background-color: white;
-                  opacity: .9;
-                  z-index: 9999;
-              }
-
-              #navall > div {
-                  /* background-color: blue; */
-                  max-height: 100%;
-                  /* 待研究 */
-                  height: 90px;
-              }
-
-              #brand {
-                  font-family: Cascadia Mono SemiBold;
-                  font-size: 30px;
-                  color: black;
-                  height: 100%;
-              }
-
-                  #brand a,
-                  #brand a:link,
-                  #brand a:visited,
-                  #brand a:active {
-                      color: black;
-                      text-decoration-line: none;
-                  }
-
-
-
-              .navmid {
-                  /* background-color: blue; */
-                  height: 100%;
-              }
-
-                  .navmid > li {
-                      display: inline;
-                      color: black;
-                  }
-
-                      .navmid > li > a {
-                          color: black;
-                          font-weight: bold;
-                      }
-
-                          .navmid > li > a:hover {
-                              text-decoration-line: underline;
-                              text-decoration-thickness: 1.5px;
-                              text-underline-offset: 7px;
-                          }
-
-              .navend1 {
-                  /* background-color: darksalmon; */
-                  font-size: 14px;
-                  text-align: right;
-                  font-weight: bold;
-              }
-
-              .navend2 img { /* 因為notice 加入dropDown顯示系統通知訊息有修改格式 */
-                  width: 25px;
-                  /* background-color: blue; */
-              }
-
-              /* 頁尾---------------------------------------------------------- */
-
-              #hid {
-                  background-color: white;
-                  border: 0px solid white;
-                  height: 60px;
-                  margin: 1% 0%;
-              }
-
-
-              footer {
-                  width: 100%;
-                  margin-top: 7%;
-                  background-color: rgb(0, 0, 0);
-                  color: white;
-                  width: 100%;
-              }
-
-
-              #footit {
-                  margin-top: 6%;
-              }
-
-                  #footit b {
-                      font-size: 14px;
-                      margin-right: 1%;
-                  }
-
-              #footpre pre {
-                  color: white;
-                  font-size: 14px;
-              }
-
-              #footpre, #footcopy {
-                  margin-top: 1%;
-              }
-
-              .cursor-pointer {
-                  cursor: pointer;
-              }
-
-              .show {
-                  display: block !important;
-              }
-
-              .unread-badge-message {
-                  position: absolute;
-                  top: 1px;
-                  left: 16px;
-                  width: 10px;
-                  height: 10px;
-              }
-
-              .unread-badge-sysNotic {
-                  position: absolute;
-                  top: 0px;
-                  left: 15px;
-                  width: 10px;
-                  height: 10px;
-              }
-
-              /* dropdown sysNotic---------------------------------------------------------- */
-              /*#region Dropdown*/
-              .dropbtn {
-                  /* background-color: #04AA6D; */
-                  /* color: white; */
-                  /* padding: 16px; */
-                  /* font-size: 16px; */
-                  border: none;
-                  cursor: pointer;
-              }
-
-              /* .dropbtn:hover, .dropbtn:focus {
-        } */
-              .dropdown {
-                  float: right;
-                  position: relative;
-                  /* display: inline-block; */
-              }
-
-              .dropdown-content {
-                  display: none;
-                  position: absolute;
-                  background-color: #f1f1f1;
-                  /* min-width: 160px; */
-                  overflow: auto;
-                  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                  right: 0;
-                  z-index: 1;
-              }
-
-                  .dropdown-content a {
-                      color: black;
-                      padding: 5px 10px;
-                      text-decoration: none;
-                      display: block;
-                      white-space: nowrap;
-                  }
-
-              .dropdown a:hover {
-                  background-color: #ddd;
-              }
-
-              /*#endregion*/
-
               .Navimg {
                   height: 70px;
                   object-fit: cover;
@@ -583,43 +377,7 @@
 
     <div class="container-fluid  p-0" id="app">
 
-        <nav id="mynav">
-            <div class="row opacity-25 p-0 " id="navall">
-                <div class="col-1 p-0"></div>
-                <div class="col-2 d-flex align-items-center" id="brand">
-                    <a href="/TanTanLib/html/cover.html">
-                        <img class="Navimg" src="UploadFolder/70.png"/>
-                    </a>
-                </div>
-                <div class="col-3">
-                    <ul class="navmid d-flex justify-content-between align-items-center p-0 pt-2">
-                        <li><a href="/YiPLib/Fliter.html"> 美 甲 查 詢 </a></li>
-                        <li><a href="/Community/Index"> 美 甲 小 天 地 </a></li>
-                        <li><a href="#"> 關 於 我 們 </a></li>
-                    </ul>
-                </div>
-                <div class="col-4 pt-3">
-                    <p class="navend1"><span id="daNick">尚未登入&nbsp&nbsp&nbsp&nbsp&nbsp</span><a id="huiORreg" style="color:black" href="../YueRegister.html"> 註冊&nbsp</a> / <a id="loginORout" style="color:black" href="../Yuelogin.html"> &nbsp登入 </a></p>
-                </div>
-                <div class="col-1 d-flex align-items-center justify-content-end navend2">
-                    <div style="position:relative">
-                        <img class="mt-1 mr-3 cursor-pointer" id="chat" src="../images/chat-box.png" onclick="showChatPage()">
-                        <div class="unread-badge-message bg-danger rounded-circle d-none"></div>
-                    </div>
-                    <div class="dropdown">
-                        <img class="cursor-pointer dropbtn-sysNotic" src="../images/notification.png" onclick="showSysNotic()">
-                        <div class="unread-badge-sysNotic bg-danger rounded-circle d-none"></div>
-                        <div id="sysNoticDropDown" class="dropdown-content dropdown-content-sysNotic rounded" style="background-color:#ccc;max-width:450px">
-                            <a class="drop-sysNotic-item">--目前沒有未讀系統訊息--</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 p-0"></div>
-            </div>
-        </nav>
-
-
-        <div class="row" style="padding-top:90px">
+        <div class="row">
             <div class="col-1"></div>
             <!--Left bar-->
             <div class="col-2">
@@ -711,21 +469,14 @@
                             <div class="FromControl">
                                 <div class="ControlContainer">
                                     <div class="FromLabel">Min</div>
-                                    <!--<input id="Frommininput" class="Frominput" type="number" value="10" min="0" max="100" />-->
-                                    <!--<input id="Frommininput" class="Frominput" type="number" v-bind:value="MinPrice" v-bind:min="MinPrice" v-bind:max="MaxPrice"/>-->
                                     <input id="Frommininput" class="Frominput" type="number" v-model="SearchMin" v-bind:min="MinPrice" v-bind:max="MaxPrice" />
                                 </div>
                                 <div class="ControlContainer">
                                     <div class="FromLabel">Max</div>
-                                    <!--<input id="Frommaxinput" class="FromMaxinput" type="number" value="40" min="0" max="100" />-->
-                                    <!--<input id="Frommaxinput" class="FromMaxinput" type="number" v-bind:value="MaxPrice" v-bind:min="MinPrice" v-bind:max="MaxPrice"/>-->
                                     <input id="Frommaxinput" class="FromMaxinput" type="number" v-model="SearchMax" v-bind:min="MinPrice" v-bind:max="MaxPrice" />
                                 </div>
                             </div>
                         </div>
-                        <!--<div>
-                            <button onclick="SeachPrice()">範圍查詢</button>
-                        </div>-->
                     </div>
                     <div class="mt-2">
                         <label>施作部位</label>
@@ -798,9 +549,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!--<div>
-                            <button onclick="SeachPrice()">範圍查詢</button>
-                        </div>-->
                     </div>
                     <div class="mt-2">
                         <label>施作部位</label>
@@ -887,57 +635,9 @@
             <!--Demo End-->
             <div class="col-1"></div>
 
-
-
-
-
-
-
-
         </div>
 
-        <footer class="footer " style="height:320px;">
-            <div class="row p-0">
-                <div class="col-1 "></div>
-                <div class="col-10">
-                    <div id="footit">
-                        <b style="font-family:Cascadia Mono SemiBold;">關於Nail it</b>
-                        <b>檢舉</b>
-                        <b>隱私權政策</b>
-                        <b>防詐騙宣導</b>
-                    </div>
-                    <div id="footpre">
-                        <pre>
-地址：408台中市南屯區公益路二段51號18樓
-客服信箱：Nailit@gmail.com
-客服電話： 04 -2326-5860
-        </pre>
-                    </div>
-                    <div id="footcopy">
-                        <p style="font-size: 12px;font-family:Franklin Gothic Book;">
-                            Copyright ©2022 MSIT44TEAM1
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </footer>
-
-
-
-
     </div>
-
-
-
-
-
-
-    <!--<script src="../YueJs/loginCheck.js"></script>
-    <script src="../js/Ansel_Layout.js"></script>
-    <script src="../AnselLib/Ansel_Service.js"></script>
-    <script src="../AnselLib/Ansel_Common.js"></script>-->
 
 
     <!--vue-->
@@ -1014,18 +714,11 @@
         const toSlider = document.querySelector('#ToSlider');
         const fromInput = document.querySelector('#Frommininput');
         const toInput = document.querySelector('#Frommaxinput');
-        //const controlSlider = document.querySelector('.SliderControl');
-        //console.log(fromSlider);
-        //console.log(toSlider);
-        //fillSlider(fromSlider, toSlider, '#C6C6C6', '#25daa5', toSlider);
-        //toSlider.style.backgroundColor = '#25daa5';
         setToggleAccessible(toSlider);
-        //fromSlider.oninput = () => controlFromSlider(fromSlider, toSlider, fromInput);
         fromSlider.oninput = function () {
             controlFromSlider(fromSlider, toSlider, fromInput);
             GetPriceMin(fromSlider.value);
         };
-        //toSlider.oninput = () => controlToSlider(fromSlider, toSlider, toInput);
         toSlider.oninput = function () {
             controlToSlider(fromSlider, toSlider, toInput);
             GetPriceMax(toSlider.value);
@@ -1044,7 +737,6 @@
 
         function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
             const rangeDistance = to.max - to.min;
-            //console.log(rangeDistance);
             const fromPosition = from.value - to.min;
             const toPosition = to.value - to.min;
             controlSlider.style.background = `linear-gradient(
@@ -1134,14 +826,9 @@
             type: "get",
             url: "CityCountyData.json",
             success: function (e) {
-                //console.log(e);
                 for (let city in e) {
-                    //console.log(e[city].CityName);
                     app.City.push(e[city].CityName);
                     app.AreaList.push(e[city].AreaList);
-                    //for (let area in e[city].AreaList) {
-                    //    console.log(e[city].AreaList[area].AreaName);
-                    //}
                 }
             }
         });
@@ -1150,20 +837,14 @@
             type: "get",
             url: "/api/Color",
             success: function (e) {
-                //console.log(e);
                 for (color in e) {
                     app.Colors.push(e[color]);
                     app.ColorStyle.push({ backgroundColor: e[color].colorCss, border: 'gray solid 1pt' });
                     app.Displayheart.push(false);
                 }
-                //console.log(app.Displayheart);
-                //app.ColorStyle[12] = ({ background: 'linear-gradient(to right, #fffbd5, #b20a2c)' });
                 app.ColorStyle[4] = ({ backgroundColor: "#F2F2F2", border: 'gray solid 1pt' });
                 app.ColorStyle[12] = ({ backgroundImage: 'linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%)' });
                 app.ColorStyle[13] = ({ backgroundColor: "#FFFFFF", border: 'gray solid 1pt' });
-                //app.ColorStyle[13] = ({ backgroundColor: "#00ffff", border: 'black solid 1pt' });
-                //background - image: linear - gradient(to right, #b8cbb8 0 %, #b8cbb8 0 %, #b465da 0 %, #cf6cc9 33 %, #ee609c 66 %, #ee609c 100 %);
-                //console.log(app.ColorStyle);
             }
         });
 
@@ -1175,12 +856,6 @@
                     app.Tag.push(e[g]);
                     app.TagisActive.push(true);
                 }
-
-                //for (Tag in e) {
-                //    app.Tag.push(e[Tag]);
-                //    app.TagisActive.push(true);
-                //}
-
             }
         });
 
@@ -1188,7 +863,6 @@
             type: "get",
             url: "/api/PCodeTable",
             success: function (e) {
-                //console.log(e);
                 app.CCode = e;
                 for (Part in e) {
                     app.PartisActive.push(true);
@@ -1197,20 +871,10 @@
             }
         });
 
-        //$.ajax({
-        //    type: "get",
-        //    url: "/api/DemoSet/GetDemoSet",
-        //    success: function (e) {
-        //        app.DemoSet = e;
-        //        app.QueryLength = e.length;
-        //    }
-        //});
-
         $.ajax({
             type: "get",
             url: "/api/DemoSet/GetMaxPrice",
             success: function (e) {
-                //console.log(e.max);
                 app.MaxPrice = e.max;
             }
         });
@@ -1219,7 +883,6 @@
             type: "get",
             url: "/api/DemoSet/GetMinPrice",
             success: function (e) {
-                //console.log(e.max);
                 app.MinPrice = e.min;
             }
         });
@@ -1234,12 +897,10 @@
     <script>
         async function ShowCountry(e) {
             app.Area = [];
-            //console.log(app.AreaList);
             for (Area in app.AreaList[e.value]) {
                 await app.Area.push(app.AreaList[e.value][Area].AreaName);
             }
             app.ShowAreas = true;
-            //console.log(app.City[e.value]);
             let AreaStr;
             AreaStr = app.City[e.value].replace("臺", "台");
             app.QueryCondition = app.City[e.value];
@@ -1247,7 +908,6 @@
                 type: "get",
                 url: "/api/DemoSet/GetCountyDemo/?Country=" + AreaStr,
                 success: function (e) {
-                    //console.log(e.length);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1273,13 +933,11 @@
 
 
         function ShowArea(e) {
-            //console.log(e.value)
             app.QueryCondition = e.value;
             $.ajax({
                 type: "get",
                 url: "/api/DemoSet/GetAreaDemo/?Area=" + e.value,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1299,13 +957,11 @@
         }
 
         function ShowColor(e) {
-            //console.log(e.value);
             app.QueryCondition = app.Colors[e.value].colorName;
             $.ajax({
                 type: "get",
                 url: "/api/DemoSet/GetColorDemo/?Color=" + e.value,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1325,13 +981,11 @@
         }
 
         function ShowTag(e) {
-            //console.log(e.value);
             app.QueryCondition = e.value;
             $.ajax({
                 type: "get",
                 url: "/api/DemoSet/GetFixTagDemo/?FixTag=" + e.value,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1350,34 +1004,13 @@
             });
         }
 
-        //function SeachPrice() {
-        //    //console.log("MIN"+app.SearchMin);
-        //    //console.log(app.SearchMax);
-        //    $.ajax({
-        //        type: "get",
-        //        url: "/api/DemoSet/GetPriceRange?Min=" + app.SearchMin + "&Max=" + app.SearchMax,
-        //        success: function (e) {
-        //            console.log(e);
-        //            app.Manicurist = [];
-        //            app.DemoSet = [];
-        //            for (demo in e) {
-        //                app.DemoSet.push(e[demo]);
-        //            }
-        //        }
-        //    });
-        //}
-
         function GetPriceMin(e) {
-            //console.log("MIN"+app.SearchMin);
-            //console.log(app.SearchMax);
             app.SearchMin = e;
-            //console.log(app.SearchMin);
             app.QueryCondition = `${app.SearchMin}元至${app.SearchMax}元`;
             $.ajax({
                 type: "get",
                 url: "/api/DemoSet/GetPriceRange?Min=" + app.SearchMin + "&Max=" + app.SearchMax,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1397,16 +1030,12 @@
         }
 
         function GetPriceMax(e) {
-            //console.log("MIN"+app.SearchMin);
-            //console.log(app.SearchMax);
             app.SearchMax = e;
-            //console.log(app.SearchMax);
             app.QueryCondition = `${app.SearchMin}元至${app.SearchMax}元`;
             $.ajax({
                 type: "get",
                 url: "/api/DemoSet/GetPriceRange?Min=" + app.SearchMin + "&Max=" + app.SearchMax,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1426,14 +1055,12 @@
         }
 
         function ShowPart(e) {
-            //console.log(e.value);
             app.QueryCondition = app.CCode[e.value.substr(1, 1)].codeRepresent;
 
             $.ajax({
                 type: "get",
                 url: "/api/DemoSet/GetPart/?Part=" + e.value,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1453,12 +1080,10 @@
         }
 
         function ChangeQuery(e) {
-            //console.log(e.value);
             app.NowQuery = e.value;
         }
 
         function Searchit() {
-            //console.log(app.SearchString);
             app.QueryCondition = app.SearchString;
             $.ajax({
                 type: "get",
@@ -1480,12 +1105,9 @@
                     }
                 }
             });
-            //console.log(app.DemoSet);
         }
 
-        //要多寫一個FOR美甲師的陣列
         function SearchM() {
-            //console.log(app.SearchM);
             app.QueryCondition = app.SearchM;
             $.ajax({
                 type: "get",
@@ -1515,7 +1137,6 @@
             for (e in app.DefultDemo) {
                 await app.DemoSet.push(app.DefultDemo[e]);
             }
-            //app.DemoSet = app.DefultDemo;
             app.SearchString = "";
             app.SearchM = "";
             app.QueryCondition = "尚未選擇";
@@ -1577,8 +1198,6 @@
 
         async function ActiveLabel(e) {
             await ClearTagLabel();
-            //console.log(e.name);
-            //console.log('--------' + app.TagisActive);
             app.TagisActive[e.name] = false;
         }
 
@@ -1590,10 +1209,7 @@
 
         async function ActivePart(e) {
             await ClearPartLabel();
-            //console.log(e.name);
             app.PartisActive[e.name] = false;
-            //console.log(app.PartisActive);
-            //console.log(app.PartisActive[e.name]);
         }
 
 
@@ -1635,7 +1251,6 @@
 
         async function SecShowCoun(e) {
             app.Area = [];
-            //console.log(app.AreaList);
             for (Area in app.AreaList[e.value]) {
                 await app.Area.push(app.AreaList[e.value][Area].AreaName);
             }
@@ -1669,7 +1284,6 @@
                 type: "get",
                 url: "/api/DemoSet/GetCountyDemo/?Country=" + searchCountry,
                 success: function (e) {
-                    //console.log(e.length);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1694,7 +1308,6 @@
                 type: "get",
                 url: "/api/DemoSet/GetAreaDemo/?Area=" + searchArea,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1724,13 +1337,11 @@
                 }
             });
 
-            //console.log(ColorName);
             app.QueryCondition = ColorName;
             $.ajax({
                 type: "get",
                 url: "/api/DemoSet/GetColorDemo/?Color=" + searchColor,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1750,13 +1361,11 @@
         }
 
         function URLShowTag() {
-            //console.log(e.value);
             app.QueryCondition = searchTag;
             $.ajax({
                 type: "get",
                 url: "/api/DemoSet/GetFixTagDemo/?FixTag=" + searchTag,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1781,7 +1390,6 @@
                 type: "get",
                 url: "/api/DemoSet/GetPriceRange?Min=" + searchMinPrice + "&Max=" + searchMaxPrice,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1806,7 +1414,6 @@
                 type: "get",
                 url: "/api/DemoSet/GetPriceRange?Min=" + searchMinPrice + "&Max=" + searchMaxPrice,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1826,8 +1433,6 @@
         }
 
         function URLShowPart() {
-            /*console.log(e.value);*/
-            //app.QueryCondition = app.CCode[e.value.substr(1, 1)].codeRepresent;
             if (searchPart == 'C0') {
                 app.QueryCondition = "手";
             }
@@ -1841,7 +1446,6 @@
                 type: "get",
                 url: "/api/DemoSet/GetPart/?Part=" + searchPart,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1861,7 +1465,6 @@
         }
 
         function URLSearchit() {
-            //console.log(app.SearchString);
             app.QueryCondition = searchSearchString;
             $.ajax({
                 type: "get",
@@ -1883,11 +1486,9 @@
                     }
                 }
             });
-            //console.log(app.DemoSet);
         }
 
         function URLSearchM() {
-            //console.log(app.SearchM);
             app.QueryCondition = searchM;
             $.ajax({
                 type: "get",
@@ -1913,13 +1514,11 @@
         }
 
         function URLSearchCertainM() {
-            //console.log(app.SearchM);
             app.QueryCondition = "複合查詢";
             $.ajax({
                 type: "get",
                 url: `/api/DemoSet/GetCertainQuery?Area=${searchArea}&Country=${searchCountry}&Manicurist=${searchManicurist}`,
                 success: function (e) {
-                    //console.log(e);
                     if (e.length == 0 || e == []) {
                         app.QueryNone = true;
                         app.QueryResault = false;
@@ -1945,15 +1544,6 @@
 
     <!--if not null-->
     <script>
-        //console.log(searchCountry);
-        //console.log(searchArea);
-        //console.log(searchColor);
-        //console.log(searchTag);
-        //console.log(searchMinPrice);
-        //console.log(searchMaxPrice);
-        //console.log(searchPart);
-        //console.log(searchSearchString);
-        //console.log(searchM);
 
         if (searchManicurist != null) {
             URLSearchCertainM();

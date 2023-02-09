@@ -81,19 +81,14 @@
 
         .Blackline {
             border-bottom: black solid 0.5pt;
-            /*position: relative;*/
-            /*color:black;*/
         }
 
         #photoframe {
-            /*padding-left: 50px;*/
-            /*padding-right: 50px;*/
             text-align: center;
         }
 
         .Profileimg {
             max-width: 100%;
-            /*object-fit: cover;*/
             object-fit: contain;
             height: 250px;
             width: 250px;
@@ -111,7 +106,6 @@
         }
 
         #Context {
-            /*height: 70%;*/
             height: 150px;
             white-space: pre-wrap;
             word-wrap: break-word;
@@ -169,19 +163,11 @@
                     transform: scale(1.1);
                 }
 
-        /*            .Seemore:hover > .Ribbon {
-                      visibility:hidden;
-                  }*/
-
         .Ribbon {
             position: absolute;
             color: white;
             background-color: rgb(0, 0, 0, 0.4);
-            /*line-height: 28px;*/
-            /*text-align: center;*/
             letter-spacing: 3px;
-            /*margin-top: 20px;*/
-            /*margin-left: -30px;*/
             padding-top: 3px;
             padding-bottom: 3px;
             padding-left: 84.5px;
@@ -192,16 +178,12 @@
         .Clickme {
             border: hidden;
             position: absolute;
-            /*top: -60px;*/
-            /*margin-left: 70px;*/
-            /*margin-right: 70px;*/
             left: 40px;
             top: 190px;
             padding-top: 5px;
             padding-bottom: 5px;
             padding-left: 70px;
             padding-right: 70px;
-            /*width:100px;*/
             text-align: center;
             background-color: white;
             color: black;
@@ -222,9 +204,7 @@
 
         .ratings {
             position: relative;
-            /*position: absolute;*/
             vertical-align: middle;
-            /*display: inline-block;*/
             color: #ddd;
             overflow: hidden;
             font-size: 30px;
@@ -234,7 +214,6 @@
 
         .Fullstar {
             position: absolute;
-            /*position: relative;*/
             left: 0;
             top: 0;
             white-space: nowrap;
@@ -254,7 +233,6 @@
         }
 
         .ContextFullstar {
-            /*width: 60%;*/
             position: absolute;
             left: 0;
             top: 0;
@@ -398,7 +376,6 @@
             height: 100px;
             width: 100px;
             border-radius: 50px;
-            /*border: #7F7F7F 1pt solid;*/
             object-fit: cover;
             object-position: center;
         }
@@ -440,190 +417,6 @@
             font-weight: bold;
         }
 
-        /*DD*/
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            overflow-y: auto;
-            overflow-x: hidden;
-        }
-
-        #mynav {
-            width: 100%;
-            height: 90px;
-            position: fixed;
-            background-position-x: 0px;
-            font-size: 16px;
-            background-color: white;
-            opacity: .9;
-            z-index: 9999;
-        }
-
-        #navall > div {
-            /* background-color: blue; */
-            max-height: 100%;
-            /* 待研究 */
-            height: 90px;
-        }
-
-        #brand {
-            font-family: Cascadia Mono SemiBold;
-            font-size: 30px;
-            color: black;
-            height: 100%;
-        }
-
-            #brand a,
-            #brand a:link,
-            #brand a:visited,
-            #brand a:active {
-                color: black;
-                text-decoration-line: none;
-            }
-
-
-
-        .navmid {
-            /* background-color: blue; */
-            height: 100%;
-        }
-
-            .navmid > li {
-                display: inline;
-                color: black;
-            }
-
-                .navmid > li > a {
-                    color: black;
-                    font-weight: bold;
-                }
-
-                    .navmid > li > a:hover {
-                        text-decoration-line: underline;
-                        text-decoration-thickness: 1.5px;
-                        text-underline-offset: 7px;
-                    }
-
-        .navend1 {
-            /* background-color: darksalmon; */
-            font-size: 14px;
-            text-align: right;
-            font-weight: bold;
-        }
-
-        .navend2 img { /* 因為notice 加入dropDown顯示系統通知訊息有修改格式 */
-            width: 25px;
-            /* background-color: blue; */
-        }
-
-        /* 頁尾---------------------------------------------------------- */
-
-        #hid {
-            background-color: white;
-            border: 0px solid white;
-            height: 60px;
-            margin: 1% 0%;
-        }
-
-
-        footer {
-            width: 100%;
-            margin-top: 7%;
-            background-color: rgb(0, 0, 0);
-            color: white;
-            width: 100%;
-        }
-
-
-        #footit {
-            margin-top: 6%;
-        }
-
-            #footit b {
-                font-size: 14px;
-                margin-right: 1%;
-            }
-
-        #footpre pre {
-            color: white;
-            font-size: 14px;
-        }
-
-        #footpre, #footcopy {
-            margin-top: 1%;
-        }
-
-        .cursor-pointer {
-            cursor: pointer;
-        }
-
-        .show {
-            display: block !important;
-        }
-
-        .unread-badge-message {
-            position: absolute;
-            top: 1px;
-            left: 16px;
-            width: 10px;
-            height: 10px;
-        }
-
-        .unread-badge-sysNotic {
-            position: absolute;
-            top: 0px;
-            left: 15px;
-            width: 10px;
-            height: 10px;
-        }
-
-        /* dropdown sysNotic---------------------------------------------------------- */
-        /*#region Dropdown*/
-        .dropbtn {
-            /* background-color: #04AA6D; */
-            /* color: white; */
-            /* padding: 16px; */
-            /* font-size: 16px; */
-            border: none;
-            cursor: pointer;
-        }
-
-        /* .dropbtn:hover, .dropbtn:focus {
-        } */
-        .dropdown {
-            float: right;
-            position: relative;
-            /* display: inline-block; */
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            /* min-width: 160px; */
-            overflow: auto;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            right: 0;
-            z-index: 1;
-        }
-
-            .dropdown-content a {
-                color: black;
-                padding: 5px 10px;
-                text-decoration: none;
-                display: block;
-                white-space: nowrap;
-            }
-
-        .dropdown a:hover {
-            background-color: #ddd;
-        }
-
-        /*#endregion*/
-
 
     </style>
 </head>
@@ -632,63 +425,7 @@
 
     <div class="container-fluid  p-0" id="ShowData" v-cloak>
 
-        <nav id="mynav">
-            <div class="row opacity-25 p-0 " id="navall">
-                <div class="col-1 p-0"></div>
-                <div class="col-2 d-flex align-items-center" id="brand">
-                    <a href="/TanTanLib/html/cover.html">
-                        <img class="Navimg" src="UploadFolder/70.png" />
-                    </a>
-                </div>
-                <div class="col-3">
-                    <ul class="navmid d-flex justify-content-between align-items-center p-0 pt-2">
-                        <li><a href="/YiPLib/Fliter.html"> 美 甲 查 詢 </a></li>
-                        <li><a href="/Community/Index"> 美 甲 小 天 地 </a></li>
-                        <li><a href="#"> 關 於 我 們 </a></li>
-                    </ul>
-                </div>
-                <div class="col-4 pt-3">
-                    <p class="navend1"><span id="daNick">尚未登入&nbsp&nbsp&nbsp&nbsp&nbsp</span><a id="huiORreg" style="color:black" href="../YueRegister.html"> 註冊&nbsp</a> / <a id="loginORout" style="color:black" href="../Yuelogin.html"> &nbsp登入 </a></p>
-                </div>
-                <div class="col-1 d-flex align-items-center justify-content-end navend2">
-                    <div style="position:relative">
-                        <img class="mt-1 mr-3 cursor-pointer" id="chat" src="../images/chat-box.png" onclick="showChatPage()">
-                        <div class="unread-badge-message bg-danger rounded-circle d-none"></div>
-                    </div>
-                    <div class="dropdown">
-                        <img class="cursor-pointer dropbtn-sysNotic" src="../images/notification.png" onclick="showSysNotic()">
-                        <div class="unread-badge-sysNotic bg-danger rounded-circle d-none"></div>
-                        <div id="sysNoticDropDown" class="dropdown-content dropdown-content-sysNotic rounded" style="background-color:#ccc;max-width:450px">
-                            <a class="drop-sysNotic-item">--目前沒有未讀系統訊息--</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-1 p-0"></div>
-            </div>
-        </nav>
-
-        <!--<div>
-            <nav class="row FixPad">
-                <div class="col">
-                </div>
-                <div class="col-2">
-                    <a>Nail It</a>
-                </div>
-                <div class="col-6">
-                    <button class="Btnpd">設計師作品</button>
-                    <button class="Btnpd">美甲天地</button>
-                    <button class="Btnpd">會員中心</button>
-                </div>
-                <div class="col-2">
-                    登入/會員中心
-                </div>
-                <div class="col">
-                </div>
-            </nav>
-        </div>-->
-
-
-        <div class="row" style="padding-top:90px">
+        <div class="row">
             <div class="col-1"></div>
             <div class="col-11">
                 <div>
@@ -732,12 +469,10 @@
                             <p class="ml-2">{{DesignList.manicuristScore}}</p>
                         </div>
                     </div>
-                    <!--class="mb-0 mt-3 ml-2"-->
                 </div>
             </div>
             <div class="col-2">
                 <div style="height: 80%;"></div>
-                <!--<button id="Sendbtn">預約</button>-->
             </div>
             <div class="col-1">
             </div>
@@ -785,8 +520,6 @@
                     <div class="col-10">
                         <div v-if="DemoSetValue" class="FixPad CowRight">
                             <p class="DisInLine">共計{{DemoSetList.length}}個作品</p>
-                            <!--<button class="CBtn">上一頁</button>
-                            <button class="CBtn">下一頁</button>-->
                         </div>
                         <div v-else="DemoSetValue">
                             <p class="produce">尚未擁有作品</p>
@@ -831,8 +564,6 @@
                     <div class="col-10">
                         <div class="FixPad CowRight" v-if="MainDemoSetValue">
                             <p class="DisInLine">共計{{MainDemoCover.length}}個作品</p>
-                            <!--<button class="CBtn">上一頁</button>
-                            <button class="CBtn">下一頁</button>-->
                         </div>
                         <div v-else="MainDemoSetValue">
                             <p class="produce">尚未擁有作品</p>
@@ -878,8 +609,6 @@
 
                         <div class="DisFlex" id="SortRight" v-if="CommentValue">
                             <p class="DisInLine">共計{{Comment.length}}條評論</p>
-                            <!--<button class="CBtn">上一頁</button>
-                            <button class="CBtn">下一頁</button>-->
                         </div>
                         <div v-else="CommentValue">
                             <p class="produce">尚未擁有評論</p>
@@ -1028,14 +757,6 @@
                     <div class="col"></div>
                 </div>
 
-                <!--<div class="row">
-                    <div class="col-1"></div>
-                    <div class="col-10">
-                        <p class="Blackline ratingimgpd"></p>
-                    </div>
-                    <div class="col-1"></div>
-                </div>-->
-
             </div>
 
             <div id="pagefour" class="row Chgcontext">
@@ -1053,41 +774,7 @@
 
         </div>
 
-        <footer class="footer " style="height:320px;">
-            <div class="row p-0">
-                <div class="col-1 "></div>
-                <div class="col-10">
-                    <div id="footit">
-                        <b style="font-family:Cascadia Mono SemiBold;">關於Nail it</b>
-                        <b>檢舉</b>
-                        <b>隱私權政策</b>
-                        <b>防詐騙宣導</b>
-                    </div>
-                    <div id="footpre">
-                        <pre>
-地址：408台中市南屯區公益路二段51號18樓
-客服信箱：Nailit@gmail.com
-客服電話： 04 -2326-5860
-        </pre>
-                    </div>
-                    <div id="footcopy">
-                        <p style="font-size: 12px;font-family:Franklin Gothic Book;">
-                            Copyright ©2022 MSIT44TEAM1
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-
-        </footer>
-
-
     </div>
-
-    <!--<script src="../YueJs/loginCheck.js"></script>
-    <script src="../js/Ansel_Layout.js"></script>
-    <script src="../AnselLib/Ansel_Service.js"></script>
-    <script src="../AnselLib/Ansel_Common.js"></script>-->
 
 
     <script>
@@ -1133,10 +820,8 @@
                             ShowData.DemoSetList.push(e[demoset]);
                         }
                     }
-                    //console.log("------"+ShowData.DemoSetList);
                     if (ShowData.DemoSetList.length == 0) {
                         ShowData.DemoSetValue = false;
-                        //console.log('OK');
                     }
                 }
             });
@@ -1162,7 +847,6 @@
                     }
                     if (ShowData.Comment.length == 0) {
                         ShowData.CommentValue = false;
-                        //console.log('OK');
                     }
                 }
             });
@@ -1171,11 +855,8 @@
                 type: "get",
                 url: "/api/DemoSet/GetMainDemoSetTable/" + GetManicuristID,
                 success: function (e) {
-                    //console.log(e);
                     for (maindemo in e) {
                         ShowData.MainDemoCover.push(e[maindemo]);
-                        //demoSetMainStartTime
-                        //demoSetMainEndTime
                         let StT = e[maindemo].demoSetMainStartTime.slice(0, 10).replace('-', '/').replace('-', '/');
                         let EdT = e[maindemo].demoSetMainEndTime.slice(0, 10).replace('-', '/').replace('-', '/');
                         let StTD = new Date(StT);
@@ -1185,13 +866,9 @@
 
                         console.log(diff / 86400000);
                         ShowData.GetRestDay.push(parseInt(diff / 86400000));
-                        //console.log(e[maindemo].demoSetMainStartTime.slice(0, 10).replace('-', '/').replace('-', '/'));
-                        //ShowData.StartDate.push(e[maindemo].demoSetMainStartTime.slice(0, 10).replace('-', '/').replace('-', '/'));
-                        //ShowData.EndDate.push(e[maindemo].demoSetMainEndTime.slice(0, 10).replace('-', '/').replace('-', '/'));
                     }
                     if (ShowData.MainDemoCover.length == 0) {
                         ShowData.MainDemoSetValue = false;
-                        //console.log('OK');
                     }
                 }
             });
@@ -1205,7 +882,6 @@
                         e[q].Commentwid = (e[q].commentScore * 20) + '%';
                         ShowData.SortDateLTH.push(e[q]);
                     }
-                    //console.log(e);
                 }
             });
 
@@ -1218,7 +894,6 @@
                         e[q].Commentwid = (e[q].commentScore * 20) + '%';
                         ShowData.SortDateHTL.push(e[q]);
                     }
-                    //console.log(e);
                 }
             });
 
@@ -1231,7 +906,6 @@
                         e[q].Commentwid = (e[q].commentScore * 20) + '%';
                         ShowData.SortRateLTH.push(e[q]);
                     }
-                    //console.log(e);
                 }
             });
 
@@ -1244,7 +918,6 @@
                         e[q].Commentwid = (e[q].commentScore * 20) + '%';
                         ShowData.SortRateHTL.push(e[q]);
                     }
-                    //console.log(e);
                 }
             });
         }
@@ -1265,7 +938,6 @@
             $('.recentbtn').removeClass('NowUnderLine');
             for (let i = 0; i < BTNlist.length; i++) {
                 if (nowPage.value == BTNlist[i]) {
-                    //console.log(Contextlist[i]);
                     $(thisbtn).addClass('NowUnderLine');
                     $(Contextlist[i]).show();
                 }
@@ -1359,14 +1031,6 @@
                 }
             }
         }).$mount('#ShowData');
-
-
-
-
-
-
-
-
 
 
     </script>
