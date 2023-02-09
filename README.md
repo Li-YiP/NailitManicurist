@@ -1,5 +1,5 @@
 # NailitManicurist
-##Front end
+## Front end
 ---
 >檔名：Fliter.html
 >>介紹：商品篩選頁面｜單選｜複選
@@ -17,6 +17,6 @@
 >>介紹：美甲師新增商品頁面
 >>使用工具：html css bootstrap jQuery vue.js
 
-##Back end
+## Back end
 
 >>使用工具：ASP.NET Core API (5.0)
