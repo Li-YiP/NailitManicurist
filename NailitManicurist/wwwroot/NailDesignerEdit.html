@@ -1223,9 +1223,9 @@
 
     <script>
         //let ManicuristID = 2;
-        let GetNowurl = window.location.href;
-        let Nowurl = new URL(GetNowurl);
-        let ManicuristID = Nowurl.searchParams.get('id');
+        const GetNowurl = window.location.href;
+        const Nowurl = new URL(GetNowurl);
+        const ManicuristID = Nowurl.searchParams.get('id');
         let GetManicuristID;
         Pre();
         async function Pre() {
@@ -1504,7 +1504,7 @@
         }
 
 
-        let ShowData = new Vue({
+        const ShowData = new Vue({
             el: '#ShowData',
             data: {
                 DesignList: [],
