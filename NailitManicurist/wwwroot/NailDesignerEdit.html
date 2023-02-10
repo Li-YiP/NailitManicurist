@@ -1270,14 +1270,14 @@
                     for (let p = 0; p < 9; p++) {
                         ShowData.FixTag[p] = e[p].tagName;
                     }
-                    var TagLenth = [];
-                    var Gettag = [];
+                    let TagLenth = [];
+                    let Gettag = [];
                     for (let i = 0; i < e.length; i++) {
                         TagLenth[i] = i;
                     }
                     while (Gettag.length != 9) {
-                        var Rd = Math.floor(Math.random() * e.length - 1) + 1;
-                        var Posi = TagLenth.indexOf(Rd);
+                        let Rd = Math.floor(Math.random() * e.length - 1) + 1;
+                        let Posi = TagLenth.indexOf(Rd);
                         if (Posi == -1) {
                             continue;
                         } else {
@@ -1341,10 +1341,10 @@
         $('.OnTxt').css('visibility', 'hidden');
         function GetVal(e, u) {
             console.log(e);
-            var NowGroup = `label[name=${e.name}]`
+            let NowGroup = `label[name=${e.name}]`
             $(NowGroup).removeClass('TagFullColor');
 
-            var Nowtxt = `input[type=text][name=${e.name}]`
+            let Nowtxt = `input[type=text][name=${e.name}]`
             if (e.value == "自訂") {
                 $(Nowtxt).css('visibility', 'visible');
             }
@@ -1352,7 +1352,7 @@
                 $(Nowtxt).css('visibility', 'hidden');
             }
 
-            var NowBtn = `label[value=${e.value}][name=${e.name}]`;
+            let NowBtn = `label[value=${e.value}][name=${e.name}]`;
             $(NowBtn).addClass('TagFullColor');
 
             console.log(e.value);
@@ -1370,22 +1370,22 @@
         function GetStDate(e) {
             //2023-01-14
             //2023 - 01 - 12T00: 00: 00
-            var St = `${e.value}T00:00:00`
+            let St = `${e.value}T00:00:00`
             ShowData.InsertDemoSet[0].demoSetMainStartTime = St;
         }
 
         function GetEdDate(e) {
-            var Ed = `${e.value}T23:59:59`
+            let Ed = `${e.value}T23:59:59`
             ShowData.InsertDemoSet[0].demoSetMainEndTime = Ed;
         }
 
         function PostStDate(e) {
-            var PSt = `${e.value}T00:00:00`
+            let PSt = `${e.value}T00:00:00`
             ShowData.ThisFormData[0].demoSetMainStartTime = PSt;
         }
 
         function PostEdDate(e) {
-            var PEd = `${e.value}T23:59:59`
+            let PEd = `${e.value}T23:59:59`
             ShowData.ThisFormData[0].demoSetMainEndTime = PEd;
         }
 
@@ -1442,7 +1442,7 @@
 
         function ShowDemo(e) {
             console.log(e.value);
-            var edemopic = ShowData.DemoList[e.value].demoPic;
+            let edemopic = ShowData.DemoList[e.value].demoPic;
             $('#Previewphoto').attr('src', edemopic);
         }
         async function DeleteDemo(e) {
@@ -1459,7 +1459,7 @@
         }
 
         function Checkthiscover() {
-            var edemocover = ShowData.PutUpCover[0].demoSetCover;
+            let edemocover = ShowData.PutUpCover[0].demoSetCover;
 
             console.log(ShowData.PutUpCover[0].demoSetCover);
             $('#Previewphoto').attr('src', edemocover);
@@ -1471,7 +1471,7 @@
         }
 
         function DeletePostDemo(e) {
-            var DeleteD = e.value;
+            let DeleteD = e.value;
             DeleteD.demoPic = null;
         }
 
@@ -1480,7 +1480,7 @@
         }
 
         function Showinsert(e) {
-            var insertimg = ShowData.PostthisDemo[e.value].demoPic;
+            let insertimg = ShowData.PostthisDemo[e.value].demoPic;
             $('#Previewphoto').attr('src', insertimg);
         }
 
@@ -1504,7 +1504,7 @@
         }
 
 
-        var ShowData = new Vue({
+        let ShowData = new Vue({
             el: '#ShowData',
             data: {
                 DesignList: [],
@@ -1697,7 +1697,7 @@
             console.log(inputMorefile);
         }
 
-        var PutCoverimg;
+        let PutCoverimg;
         async function PutCoverfile(e) {
             let Coverimg = new FormData();
             Coverimg.append("file", e.files[0]);
@@ -1707,7 +1707,7 @@
                 body: Coverimg
             });
             PutCoverimg = e.files[0].name;
-            var CoverimgPath = "UploadFolder/" + PutCoverimg;
+            let CoverimgPath = "UploadFolder/" + PutCoverimg;
             console.log(CoverimgPath);
             $('#Previewphoto').attr('src', CoverimgPath);
             ShowData.PutUpCover[0].demoSetCover = CoverimgPath;
